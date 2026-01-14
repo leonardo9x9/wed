@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* MENÚ */
+.menu {
+    background-color: #222;
+    position: sticky;
+    top: 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #2c7be5;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    background-color: #2c7be5;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+/* CAJAS */
+.caja {
+    background-color: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.caja img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #2c7be5;
+    color: white;
+}
+
+/* BOTÓN VOLVER */
+.volver {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #2c7be5;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.volver:hover {
+    background-color: #1a5bb8;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+/* BOTONES */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    color: #2c7be5;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #1a5bb8;
+    color: white;
+}
+
+/* BOTONES SECUNDARIOS */
+.btn-secundario {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #2c7be5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-secundario:hover {
+    background-color: #1a5bb8;
+}
+
+/* CONTENEDOR DE BOTONES */
+.botones-inicio {
+    margin-top: 20px;
+}
+/* === Mejora moderna y compatibilidad === */
+
+/* Botones principales (inicio y secciones) */
+.btn, .btn-secundario {
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover suave en botones */
+.btn:hover {
+    background-color: #2ecc71; /* Verde brillante */
+    transform: scale(1.05);
+}
+
+.btn-secundario:hover {
+    background-color: #2980b9; /* Azul más intenso */
+    transform: scale(1.05);
+}
+
+/* Secciones con sombra y bordes suaves */
+.caja {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.caja:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Imágenes más atractivas */
+.caja img {
+    border-radius: 10px;
+    margin: 15px 0;
+    max-width: 100%;
+    transition: transform 0.3s;
+}
+
+.caja img:hover {
+    transform: scale(1.02);
+}
+
+/* Tabla más moderna */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Menú más visual */
+.menu ul li a {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Encabezado más llamativo */
+.encabezado {
+    background: linear-gradient(to right, #2980b9, #6dd5fa);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Responsivo básico */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botones-inicio a {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+.galeria {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.imagen-destacada {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.imagen-destacada:hover {
+    transform: scale(1.05);
+}
+
